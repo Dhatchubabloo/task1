@@ -7,24 +7,24 @@ public class Average{
         int number = scan.nextInt();
         int [] display = new int[number];
         System.out.println("enter array values");
-        for(int i=0;i<n;i++){
+        for(int i=0;i<number;i++){
             int token = scan.nextInt();
             display[i] = token;
         }
         int max = a[0];
-        for(int i=1;i<n;i++){
+        for(int i=1;i<number;i++){
             if(display[i]>max){
                 max = display[i];
             }
         }
         int min = a[0];
-        for(int i=1;i<n;i++){
+        for(int i=1;i<number;i++){
             if(display[i]<min){
                 min = display[i];
             }
         }
         float sum= 0;
-        for(int i=0;i<n;i++){
+        for(int i=0;i<number;i++){
             if(display[i]!=max && display[i]!=min){
                 sum = sum+display[i];
             }
