@@ -1,15 +1,15 @@
 package programs;
 import java.util.Scanner;
-public class Arraysum{
+public class ArraySum{
     Scanner scan = new Scanner(System.in);
     public void sum(){
         System.out.println("enter the array size");
-        int n = scan.nextInt();
-        int [] a = new int[n];
+        int number = scan.nextInt();
+        int [] display = new int[number];
         System.out.println("enter array values");
         for(int i=0;i<n;i++){
-            int x = scan.nextInt();
-            a[i] = x;
+            int token = scan.nextInt();
+            display[i] = token;
         }
         int sum = 0;
         for(int i=0;i<n;i++){
