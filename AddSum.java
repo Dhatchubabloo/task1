@@ -4,12 +4,12 @@ public class AddSum{
     Scanner scan = new Scanner(System.in);
     public void sumVal(){
         System.out.println("enter the array size");
-        int n = scan.nextInt();
-        int [] a = new int[n];
+        int number = scan.nextInt();
+        int [] display = new int[number];
         System.out.println("enter array values");
-        for(int i=0;i<n;i++){
+        for(int i=0;i<number;i++){
             int x = scan.nextInt();
-            a[i] = x;
+            display[i] = x;
         }
         System.out.println("the target value is");
         int target = scan.nextInt();
