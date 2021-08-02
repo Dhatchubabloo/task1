@@ -8,17 +8,17 @@ public class AddSum{
         int [] display = new int[number];
         System.out.println("enter array values");
         for(int i=0;i<number;i++){
-            int x = scan.nextInt();
-            display[i] = x;
+            int token = scan.nextInt();
+            display[i] = token;
         }
         System.out.println("the target value is");
         int target = scan.nextInt();
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
+        for(int i=0;i<number;i++){
+            for(int j=i+1;j<number;j++){
                 if(i!=j){
-                    int x = a[i]+a[j];
-                    if(x==target){
-                        System.out.println("the sum of "+a[i]+" and "+a[j]+" is "+target);
+                    int sum = display[i]+display[j];
+                    if(sum==target){
+                        System.out.println("the sum of "+display[i]+" and "+display[j]+" is "+target);
                     }
                 }
             }
