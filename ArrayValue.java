@@ -2,17 +2,17 @@ package programs;
 import java.util.Scanner;
 public class ArrayValue{
     Scanner scan = new Scanner(System.in);
-    public boolean testvalue(){
+    public boolean isContains(){
         System.out.println("enter the array size");
-        int n = scan.nextInt();
-        int [] a = new int[n];
+        int number = scan.nextInt();
+        int [] display = new int[number];
         System.out.println("enter array values");
         for(int i=0;i<n;i++){
             int x = scan.nextInt();
-            a[i] = x;
+            display[i] = x;
         }
         System.out.println("enter the element to check it is present in this array or not");
-        int val = scan.nextInt();
+        int value = scan.nextInt();
         int count = 0;
         for(int i=0;i<n;i++){
             if(a[i]==val){
