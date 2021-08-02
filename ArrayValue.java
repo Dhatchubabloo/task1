@@ -8,8 +8,8 @@ public class ArrayValue{
         int [] display = new int[number];
         System.out.println("enter array values");
         for(int i=0;i<n;i++){
-            int x = scan.nextInt();
-            display[i] = x;
+            int token = scan.nextInt();
+            display[i] = token;
         }
         System.out.println("enter the element to check it is present in this array or not");
         int value = scan.nextInt();
