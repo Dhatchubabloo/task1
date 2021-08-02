@@ -28,7 +28,7 @@ public class Task1Runner{
 
             case 5:
             ArrayValue value = new ArrayValue();
-            System.out.println(value.testvalue());
+            System.out.println(value.isContains());
             break;
 
             case 6:
