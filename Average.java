@@ -2,34 +2,34 @@ package programs;
 import java.util.Scanner;
 public class Average{
     Scanner scan = new Scanner(System.in);
-    public void avgVal(){
+    public void avgValue(){
         System.out.println("enter the array size");
-        int n = scan.nextInt();
-        int [] a = new int[n];
+        int number = scan.nextInt();
+        int [] display = new int[number];
         System.out.println("enter array values");
         for(int i=0;i<n;i++){
-            int x = scan.nextInt();
-            a[i] = x;
+            int token = scan.nextInt();
+            display[i] = token;
         }
         int max = a[0];
         for(int i=1;i<n;i++){
-            if(a[i]>max){
-                max = a[i];
+            if(display[i]>max){
+                max = display[i];
             }
         }
         int min = a[0];
         for(int i=1;i<n;i++){
-            if(a[i]<min){
-                min = a[i];
+            if(display[i]<min){
+                min = display[i];
             }
         }
         float sum= 0;
         for(int i=0;i<n;i++){
-            if(a[i]!=max && a[i]!=min){
-                sum = sum+a[i];
+            if(display[i]!=max && display[i]!=min){
+                sum = sum+display[i];
             }
         }
-        float avg = sum/(n-2);
+        float avg = sum/(number-2);
         System.out.println("average of given array except smallest and largest value of the array");
         System.out.println(avg);
     }
