@@ -2,58 +2,58 @@ package programs;
 import java.util.Scanner;
 public class CommonElements{
     Scanner scan = new Scanner(System.in);
-    public void IntCommon(){
+    public void commonInt(){
         System.out.println("for an integer elements");
         System.out.println("enter the size of 1st Array");
-        int n = scan.nextInt();
-        int [] a = new int[n];
+        int number = scan.nextInt();
+        int [] display = new int[number];
         System.out.println("enter array values");
-        for(int i=0;i<n;i++){
-            int x = scan.nextInt();
-            a[i] = x;
+        for(int i=0;i<number;i++){
+            int token = scan.nextInt();
+            display[i] = token;
         }
         System.out.println("enter the size of 2nd Array");
-        int n1 = scan.nextInt();
-        int [] a1 = new int[n1];
+        int number1 = scan.nextInt();
+        int [] display1 = new int[number1];
         System.out.println("enter array values");
-        for(int i=0;i<n1;i++){
-            int x = scan.nextInt();
-            a1[i] = x;
+        for(int i=0;i<number1;i++){
+            int token = scan.nextInt();
+            display1[i] = token;
         }
         System.out.println("common elements between two integer arrays are:");
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n1;j++){
-                if(a[i] == a1[j]){
-                    System.out.print(a[i]+" ");
+        for(int i=0;i<number;i++){
+            for(int j=0;j<number1;j++){
+                if(dislay[i] == display1[j]){
+                    System.out.print(display[i]+" ");
                     break;
                 }
             }
         }
         System.out.println();
     }
-    public void StringCommon(){
+    public void commonChar(){
         System.out.println("for an String elements");
         System.out.println("enter the size of 1st Array");
-        int n = scan.nextInt();
-        String str[]  = new String[n];
+        int number = scan.nextInt();
+        String word[]  = new String[number];
         System.out.println("enter array values");
-        for(int i=0;i<n;i++){
-            String x = scan.next();
-            str[i] = x;
+        for(int i=0;i<number;i++){
+            String token = scan.next();
+            word[i] = token;
         }
         System.out.println("enter the size of 2nd Array");
-        int n1 = scan.nextInt();
-        String str1[]  = new String[n1];
+        int number1 = scan.nextInt();
+        String word1[]  = new String[number1];
         System.out.println("enter array values");
-        for(int i=0;i<n1;i++){
-            String x = scan.next();
-            str1[i] = x;
+        for(int i=0;i<number1;i++){
+            String token = scan.next();
+            word1[i] = token;
         }
         System.out.println("common elements between two string arrays are:");
-        for(int i=0;i<n;i++){
-            for(int j=0;j<n1;j++){
-                if(str[i].equals(str1[j])){
-                    System.out.print(str[i]+" ");
+        for(int i=0;i<number;i++){
+            for(int j=0;j<number1;j++){
+                if(word[i].equals(word1[j])){
+                    System.out.print(word[i]+" ");
                 }
             }
         }
