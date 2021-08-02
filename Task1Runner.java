@@ -4,8 +4,8 @@ public class Task1Runner{
     public static void main(String  [] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("enter the value from 1 to 15 to execute the corresponding program");
-        int n = scan.nextInt();
-        switch(n){
+        int choice = scan.nextInt();
+        switch(choice){
             case 1:
             Arrayindex arrayindex = new Arrayindex();
             arrayindex.index();
